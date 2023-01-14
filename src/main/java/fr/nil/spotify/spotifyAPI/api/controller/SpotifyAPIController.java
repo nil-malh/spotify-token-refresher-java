@@ -20,9 +20,9 @@ import java.util.Base64;
 public class SpotifyAPIController {
 
     @Value("#{systemEnvironment['SPOTIFY_CID']}")
-    private final String CLIENT_ID = "b07e0f0337ea4efd81ee9f34c663cc80";
+    private final String CLIENT_ID;
     @Value("#{systemEnvironment['SPOTIFY_CSRT']}")
-    private final String CLIENT_SECRET = "7254025957b644058fe56929a10fedf0";
+    private final String CLIENT_SECRET;
 
     /* @GetMapping("/callback")
      public RefreshTokenType getRefreshToken(@RequestParam(value = "code") String token) {
